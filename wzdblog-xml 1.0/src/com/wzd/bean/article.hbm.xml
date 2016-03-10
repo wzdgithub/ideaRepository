@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.wzd.bean">
+    <class name="Article" table="t_article">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="author" type="java.lang.String">
+            <column name="author"/>
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date"/>
+        </property>
+        <property name="views" type="java.lang.Integer">
+            <column name="views"/>
+        </property>
+        <property name="title">
+            <column name="title"/>
+        </property>
+        <property name="introduction">
+            <column name="introduction" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content"/>
+        </property>
+        <!--<property name="category" type="java.lang.String">
+            <column name="category"/>
+        </property>-->
+
+        <!--<set name="comments" cascade="save-update">
+            <key column="article_id" />
+            <one-to-many class="com.wzd.bean.Comment"/>
+        </set>-->
+        <property name="img" type="java.lang.String">
+            <column name="img"/>
+        </property>
+    </class>
+</hibernate-mapping>

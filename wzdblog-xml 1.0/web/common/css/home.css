@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f2f2f2;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+@font-face{
+	font-family: logoFont;
+	src: url('../font/SQUIC___.TTF');
+}
+.wzd-header{
+	width: 100%;
+	height: 350px;
+	background: url(../img/01.jpg);
+}
+.wzd-header-menu{
+	width: 100%;
+	height: 48px;
+	background-color: rgb(255,255,255);
+}
+.menu{
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+.menu .logo{
+	display: inline-block;
+	float: left;
+	font-family: logoFont;
+	font-size: 38px;
+}
+.menu li{
+	width: 100px;
+	height: 39px;
+	float: right;
+	list-style-type: none;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 9px;
+}
+.menu li:hover{
+	background-color: #12b7f5;
+}
+.menu li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #34302d;
+}
+.wzd-context{
+	width: 100%;
+}
+.context{
+	width: 900px;
+	margin: 0 auto;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+.title{
+	height: 50px;
+	margin-top: 20px;
+	line-height: 50px;
+	color: rgba(0,0,0,0.9);
+	font-size: 20px;
+	background: #e2e4e7;
+}
+.title span{
+	margin-left: 15px;
+}
+.left{
+	width: 600px;
+	float: left;
+}
+.article{
+	width: 600px;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+}
+.article-img{
+	width: 180px;
+	height: 180px;
+	margin: 15px;
+	max-width: 180px;
+	max-height: 180px;
+}
+.article-introduction{
+	width: 385px;
+	height: 180px;
+	float: right;
+	margin:10px 0 10px 0;
+	overflow: hidden;
+}
+.article-title{
+	width: 100%;
+	height: 39px;
+	line-height: 39px;
+	font-size: 24px;
+	border-bottom: 1px hidden #ccc;
+	overflow: hidden;
+}
+.article-title a{
+	text-decoration: none;
+	color: #444;
+}
+.introduction{
+	width: 100%;
+	height: 102px;
+	margin: 4px 0 4px 0;
+	overflow: hidden;
+	font-size: 14px;
+	color: #756F71;
+}
+.introduction a{
+	text-decoration: none;
+	color: #aaa;
+}
+.article-inf{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #756F71;
+}
+.article-inf .date,.article-inf .views{
+	margin-left: 8px;
+}
+.right{
+	width: 300px;
+	float: left;
+}
+.weixin{
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+}
+.weixin img{
+	width: 275px;
+	height: 275px;
+	max-width: 275px;
+	max-height: 275px;
+	margin:0 0 25px 25px;
+}
+.footer{
+	width: 100%;
+	height: 300px;
+	background: #1f2024;
+	margin-top: 40px;
+}

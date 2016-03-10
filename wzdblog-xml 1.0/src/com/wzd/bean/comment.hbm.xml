@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.wzd.bean">
+    <class name="Comment" table="t_comment">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="userName">
+            <column name="username"/>
+        </property>
+        <property name="icon">
+            <column name="icon"/>
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date"/>
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content"/>
+        </property>
+        <property name="articleId" type="java.lang.Integer">
+            <column name="article_id"/>
+        </property>
+        <many-to-one name="comment" column="comment_id"/>
+    </class>
+</hibernate-mapping>
